@@ -4,3 +4,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.infoattributes{
+    @apply w-10/12 rounded border p-5 bg-[#c3f9c3] text-center text-black font-Abel my-7;
+}
+
+.rowflexbox{
+    @apply flex items-center hover:ml-14 hover:scale-105 transition-all ease-out duration-500 ml-8;
+}
+
+.scrolltap{
+    @apply hover:scale-90 hover:shadow-md hover:shadow-black transition-all duration-300 ease-in-out;
+}
+
+.button{
+    @apply inline-block p-3 m-4 rounded bg-[#c3f9c3]
+}

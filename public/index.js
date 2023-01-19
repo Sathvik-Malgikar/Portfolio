@@ -27,8 +27,28 @@ $("body").ready(()=>{
     }, 2900);
 })
 
+
+
 function makevisible(){
     $("#welcomediv").removeClass("h-screen")
 }
 
+$("body").ready(()=>{
+    $("#about").click(()=>{
+        $("#aboutdiv")[0].scrollIntoView({behavior : "smooth" , block : "center"})
+    })
 
+    
+    $("#education").on( "click" , ()=>{
+        $("#educationdiv")[0].scrollIntoView({behavior : 'smooth' , block : 'center'})
+    })
+    
+    $("#xp").click(()=>{
+        $("#xpdiv")[0].scrollIntoView({behavior : 'smooth' , block : 'center'})
+    })
+    
+    $("#contact").click(()=>{
+        $("#contactdiv")[0].scrollIntoView({behavior : 'smooth' , block : 'center'})
+    })    
+    
+})
