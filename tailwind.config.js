@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors : {
         foreground : "#c3f9c3",
-        background : "#87CEEB",
+        background : "#155e67",
       },
       fontFamily : {
         concertOne : ["Concert One"],

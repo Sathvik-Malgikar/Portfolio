@@ -20,3 +20,7 @@
 .button{
     @apply inline-block p-3 m-4 rounded bg-foreground;
 }
+
+.bargraph{
+@apply     m-8 my-auto h-3 bg-background rounded;
+}
