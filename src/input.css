@@ -9,8 +9,8 @@
     @apply w-10/12 rounded border p-5 bg-foreground text-center text-black font-Abel my-7;
 }
 
-.rowflexbox{
-    @apply flex items-center hover:ml-14 hover:scale-105 transition-all ease-out duration-500 ml-8;
+.rowbox{
+    @apply hover:ml-14 hover:scale-105 transition-all ease-out duration-500 ml-8;
 }
 
 .scrolltap{
@@ -18,9 +18,13 @@
 }
 
 .button{
-    @apply inline-block p-3 m-4 rounded bg-foreground;
+    @apply inline-block p-3 m-4 rounded hover:scale-90 bg-foreground;
 }
 
 .bargraph{
 @apply     m-8 my-auto h-3 bg-background rounded;
+}
+
+.circleavatar{
+@apply inline-block m-8 h-28 w-28 rounded-full bg-background;
 }

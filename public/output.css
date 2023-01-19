@@ -587,8 +587,16 @@ video {
   top: 0.75rem;
 }
 
+.left-32{
+  left: 8rem;
+}
+
 .left-10{
   left: 2.5rem;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .m-5{
@@ -599,8 +607,16 @@ video {
   margin: 2rem;
 }
 
+.m-14{
+  margin: 3.5rem;
+}
+
 .m-10{
   margin: 2.5rem;
+}
+
+.m-4{
+  margin: 1rem;
 }
 
 .mb-40{
@@ -953,17 +969,15 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.rowflexbox{
+.rowbox{
   margin-left: 2rem;
-  display: flex;
-  align-items: center;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.rowflexbox:hover{
+.rowbox:hover{
   margin-left: 3.5rem;
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -996,12 +1010,28 @@ video {
   padding: 0.75rem;
 }
 
+.button:hover{
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .bargraph{
   margin: 2rem;
   margin-top: auto;
   margin-bottom: auto;
   height: 0.75rem;
   border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 94 103 / var(--tw-bg-opacity));
+}
+
+.circleavatar{
+  margin: 2rem;
+  display: inline-block;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 9999px;
   --tw-bg-opacity: 1;
   background-color: rgb(21 94 103 / var(--tw-bg-opacity));
 }
