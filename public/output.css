@@ -595,6 +595,10 @@ video {
   margin: 2rem;
 }
 
+.m-10{
+  margin: 2.5rem;
+}
+
 .mb-40{
   margin-bottom: 10rem;
 }
@@ -627,6 +631,10 @@ video {
   display: table-cell;
 }
 
+.grid{
+  display: grid;
+}
+
 .contents{
   display: contents;
 }
@@ -651,12 +659,42 @@ video {
   height: 100vh;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
+.h-3{
+  height: 0.75rem;
+}
+
 .w-12{
   width: 3rem;
 }
 
 .w-10{
   width: 2.5rem;
+}
+
+.w-6{
+  width: 1.5rem;
+}
+
+.w-36{
+  width: 9rem;
+}
+
+.w-96{
+  width: 24rem;
+}
+
+.min-w-0{
+  min-width: 0px;
+}
+
+.scale-110{
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .resize{
@@ -667,12 +705,24 @@ video {
   list-style-type: disc;
 }
 
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-2{
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .flex-col{
   flex-direction: column;
 }
 
 .items-center{
   align-items: center;
+}
+
+.justify-start{
+  justify-content: flex-start;
 }
 
 .justify-center{
@@ -706,8 +756,38 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-foreground{
+  --tw-bg-opacity: 1;
+  background-color: rgb(195 249 195 / var(--tw-bg-opacity));
+}
+
+.bg-background{
+  --tw-bg-opacity: 1;
+  background-color: rgb(135 206 235 / var(--tw-bg-opacity));
+}
+
 .bg-\[url\(\'\.\/futuristic\.jpg\'\)\]{
   background-image: url('./futuristic.jpg');
+}
+
+.bg-gradient-to-tr{
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.from-blue-300{
+  --tw-gradient-from: #93c5fd;
+  --tw-gradient-to: rgb(147 197 253 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-background{
+  --tw-gradient-from: #87CEEB;
+  --tw-gradient-to: rgb(135 206 235 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-6{

@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .infoattributes{
-    @apply w-10/12 rounded border p-5 bg-[#c3f9c3] text-center text-black font-Abel my-7;
+    @apply w-10/12 rounded border p-5 bg-foreground text-center text-black font-Abel my-7;
 }
 
 .rowflexbox{
@@ -18,5 +18,5 @@
 }
 
 .button{
-    @apply inline-block p-3 m-4 rounded bg-[#c3f9c3]
+    @apply inline-block p-3 m-4 rounded bg-foreground;
 }
