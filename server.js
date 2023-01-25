@@ -1,6 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
+const http = require("http")
 let app = express()
 
 
@@ -33,7 +34,8 @@ app.post("/form/",(req,res)=>{
     mongoose.connection.on("connected",()=>{
     dbconnected = true
     console.log("db connected!");
-    app.listen(8080)
+    let server = http.createServer(app)
+    server.listen(8080)
     })
     mongoose.connection.on("error",()=>{
     dbconnected = false
