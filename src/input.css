@@ -21,6 +21,10 @@
     @apply inline-block p-3 m-4 rounded hover:scale-90 bg-foreground;
 }
 
+.button-submit{
+    @apply inline-block p-3 px-10 m-4 rounded hover:bg-white hover:scale-90 bg-foreground;
+}
+
 .bargraph{
 @apply     m-8 my-auto h-3 bg-background rounded;
 }
@@ -28,3 +32,20 @@
 .circleavatar{
 @apply inline-block m-8 h-28 w-28 rounded-full bg-background;
 }
+
+.vruler{
+@apply inline-block my-4 border-foreground border min-h-full;
+}
+
+.modal-bg{
+@apply backdrop-blur-md bg-opacity-60 bg-black fixed top-0 left-0 h-screen w-screen flex items-center justify-center;
+}
+
+.modal{
+@apply bg-foreground rounded-md   text-black text-xl font-Abel p-4 flex-col flex justify-start items-center;
+}
+
+.inputfield {
+    @apply bg-white tracking-wide border-2 border-background rounded-md  m-4 ;
+}
+

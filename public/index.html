@@ -9,7 +9,12 @@
 
 <body class="bg-[url('./futuristic.jpg')]">
   
-  <span class="z-10 visible flex flex-col justify-evenly items-center rounded fixed right-6 w-24 h-full bg-[#ffffff]">
+  <span id="hamburger" class="p-4 z-10 rounded-full fixed right-6 bg-foreground "> <svg class="w-6 h-6 scale-150 " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+  </svg>
+  </span>
+
+  <span id="navbar" class="z-10 hidden flex-col justify-evenly items-center rounded fixed right-6 w-24 h-full bg-foreground">
     
     <svg id="about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="scrolltap w-10 h-10">
       <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm11.378-3.917c-.89-.777-2.366-.777-3.255 0a.75.75 0 01-.988-1.129c1.454-1.272 3.776-1.272 5.23 0 1.513 1.324 1.513 3.518 0 4.842a3.75 3.75 0 01-.837.552c-.676.328-1.028.774-1.028 1.152v.75a.75.75 0 01-1.5 0v-.75c0-1.279 1.06-2.107 1.875-2.502.182-.088.351-.199.503-.331.83-.727.83-1.857 0-2.584zM12 18a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
@@ -103,32 +108,47 @@
   </div>
 
 
-
-
-  <div id="contactdiv" class="rowbox mb-40">
-
-    <div class="infoattributes">
-      <h3 class="text-5xl">Let's meet !</h3>
-      <br />
-      <p class="text-3xl">
-        Email : sathvik.malgikar@gmail.com <br />
-        Phone number : +91 7019486115 <span class="font-light text-xl"> (whatsapp enabled) </span> <br>
-        Github account : <a class="underline" target="_blank" href="https://github.com/Sathvik-Malgikar">
-          Sathvik-Malgikar </a><br>
-        Linkedin : <a class="underline" target="_blank" href="https://www.linkedin.com/in/sathvik-malgikar-792b52249/">
-          sathvik-malgikar </a>
-      </p>
-    </div>
-  </div>
   </div>
 
 
   </div>
 
+  <footer class="bg-gray-900 text-center text-white flex justify-evenly " >
+<div class="flex flex-col items-center justify-around">
+  <a href="https://drive.google.com/file/d/1IhTJVMcI0I2hoe_LrCH4Y_Yg6j9DCLA1/view?usp=sharing"  class="button text-black" > Download CV </a>
+  <span id="msgbtn"  class="button text-black" > Leave a message </span>
+</div>
+<span class="vruler" ></span>
+<div class="p-4">
+  <p class="text-xl leading-relaxed">
+    Email : sathvik.malgikar@gmail.com <br />
+    Phone number : +91 7019486115 <span class="font-light text-xl"> (whatsapp enabled) </span> <br>
+    Github account : <a class="underline" target="_blank" href="https://github.com/Sathvik-Malgikar">
+      Sathvik-Malgikar </a><br>
+    Linkedin : <a class="underline" target="_blank" href="https://www.linkedin.com/in/sathvik-malgikar-792b52249/">
+      sathvik-malgikar </a>
+  </p>
+</div>
+  </footer>
+
+<div id="modalContainer" class="hidden" >
+  <div class="modal">
+    Email: <br>
+<input required placeholder="your email" type="email" class="inputfield">
+    phone no: <br>
+<input required placeholder=" ( optional )" type="tel" class="inputfield">
+    message: <br>
+    <textarea class="inputfield" placeholder=" ( optional ) " name="message" id="messagebox" cols="30" rows="10"></textarea>
+<div id="submitmsg" class="button-submit" >
+Submit
+</div>
+
+  </div>
+</div>
 
 
 </body>
 <script src="./jquery-3.6.3.js"></script>
-<script src="./index.js"></script>
+<script type="module" src="./index.js"></script>
 
 </html>

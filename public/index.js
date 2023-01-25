@@ -1,9 +1,4 @@
-// $(".outstand").on("mouseenter",()=>{
-//     $("#bodycontainer").addClass("blur-sm")
-// })
-// $(".outstand").on("mouseleave",()=>{
-//     $("#bodycontainer").removeClass("blur-sm")
-// })
+
 
 
 $("body").ready(()=>{
@@ -52,3 +47,42 @@ $("body").ready(()=>{
     })    
     
 })
+
+$("#hamburger").hover(()=>{
+
+    displaynav()
+    $("#navbar").on("mouseleave",()=>{
+        $("#navbar").addClass("hidden") 
+        $("#navbar").removeClass("flex") 
+
+    })
+})
+
+function displaynav(){
+    $("#navbar").removeClass("hidden") 
+    $("#navbar").addClass("flex") 
+}
+
+$("#msgbtn").click(()=>{
+    toggleModal()
+})
+
+function toggleModal(){
+    
+    $("#modalContainer").removeClass("hidden")
+    $("#modalContainer").addClass("modal-bg")
+    
+}
+
+
+$("#submitmsg").click(()=>{
+    submit()
+})
+
+
+function submit(){
+
+    console.log("will submit");
+    //send backend
+
+}
