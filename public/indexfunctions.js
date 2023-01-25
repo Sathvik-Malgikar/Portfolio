@@ -38,14 +38,14 @@ function submit(){
         body: JSON.stringify(obj)
 
     }   ).then((res)=>{
-        if(res.status==500){
-
-            console.error("internal error in server");
-            toast("Code 500 Internal server error.\n Sorry, try again later!")
-        }
-        else{
+        if(res.status==200){
             console.log("submitted!");
             toast(" Your message has been sent successfully, thank you for contacting !  ")
+           
+        }
+        else{
+            console.error(`internal error in server code ${res.status} `);
+            toast(`Code ${res.status} Internal server error.\n Sorry, try again later!`)
         }
     }).catch(()=>{
         console.error("error occured could not contact db");
