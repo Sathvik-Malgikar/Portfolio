@@ -2,7 +2,6 @@
 
 
 $("body").ready(()=>{
-    console.log("working!");
   
     setTimeout(() => {
         

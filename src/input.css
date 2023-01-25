@@ -49,3 +49,11 @@
     @apply bg-white tracking-wide border-2 border-background rounded-md  m-4 ;
 }
 
+
+.toast-hider{
+    @apply opacity-0 hidden;
+}
+.toast {
+    @apply fixed left-12 top-36 rounded bg-foreground max-w-md p-4 text-2xl font-Abel tracking-wide text-center m-6 transition-opacity duration-500 ease-linear ;
+}
+
