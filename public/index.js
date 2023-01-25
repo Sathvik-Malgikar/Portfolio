@@ -24,9 +24,6 @@ $("body").ready(()=>{
 
 
 
-function makevisible(){
-    $("#welcomediv").removeClass("h-screen")
-}
 
 $("body").ready(()=>{
     $("#about").click(()=>{
@@ -58,21 +55,13 @@ $("#hamburger").hover(()=>{
     })
 })
 
-function displaynav(){
-    $("#navbar").removeClass("hidden") 
-    $("#navbar").addClass("flex") 
-}
+
 
 $("#msgbtn").click(()=>{
     toggleModal()
 })
 
-function toggleModal(){
-    
-    $("#modalContainer").removeClass("hidden")
-    $("#modalContainer").addClass("modal-bg")
-    
-}
+
 
 
 $("#submitmsg").click(()=>{
@@ -80,9 +69,3 @@ $("#submitmsg").click(()=>{
 })
 
 
-function submit(){
-
-    console.log("will submit");
-    //send backend
-
-}
