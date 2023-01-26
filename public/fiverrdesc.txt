@@ -1,8 +1,0 @@
-I am a passionate learner and coding enthusiast! I love solving problems and creating projects. I am always happy to utilize my skillset and framework knowledge to brainstorm and come up with solutions. I have worked on team projects in different hackathons and coding competitions. I am familiar with domains like web and app development, creating desktop applications, developing efficient algorithms.I am fluent in both front and backend frameworks like react js , mongodb , node js, express js. I have made simple platformer 2d games in unity engines and know a thing or two about game logic.
-
-I have made some websites using MERN stack and hosted them online. One had a global realtime counter component for which i had to learn more about websockets and socket.IO library, to get comfortable with sockets. I love venturing into unknown domains and do not hesitate to learn new concepts/ frameworks as and when required.
-I have also worked with the unity game development for both desktop and mobile.
-To make cross-platform applications, i had to get familiar with react native and flutter.
-Then i had to put together all that i learnt. That is, apply the concepts to real problems, I participated in numerous coding contests, and hackathons as well as game jams in college events.
-my team reached the top positions in a hackathon where we had made a VR based game in unity that used space as theme.
-I have also worked with mongoDB for the backend of a facts app that i made with react native.
