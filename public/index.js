@@ -56,15 +56,12 @@ $("#hamburger").hover(()=>{
 
 
 
-$("#msgbtn").click(()=>{
-    toggleModal()
-})
+$("#msgbtn").click(toggleModal)
 
 
 
 
-$("#submitmsg").click(()=>{
-    submit()
-})
+$("#submitmsg").click(submit)
 
+$("#modalbackbtn").click(toggleModal)
 
