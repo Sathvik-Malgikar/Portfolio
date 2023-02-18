@@ -1,0 +1,14 @@
+[
+    {
+        "name" : "Sustain4ward",
+        "tagline" : "Your actions matter!",
+        "repo" : "https://github.com/Sathvik-Malgikar/Sustain4ward",
+         "desc" : "A chrome extension to provide key information about carbon footprint caused by product in current webpage and suggest greener alternatives."
+    },
+    {
+        "name" : "CodeCare",
+        "tagline" : "There can be life after cancer, the only prerequisite is early detection.",
+        "repo" : "https://github.com/Sathvik-Malgikar/CodeCare",
+         "desc" : "A deep learning model that is trained from datasets from the cancer imaging archive. Then make a UI for doctors to interact with model and utilise it to save their time and get classification and severity of tumour if present faster and hence act faster"
+    }
+]

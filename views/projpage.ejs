@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%=  doc.name %> - <%=  doc.tagline %> 
+    </title>
+    <link rel="stylesheet" href="/output.css" type="text/css">
+  
+</head>
+<body class="bg-black text-white text-center opacity-100">
+    <br><br>
+<h2 class="text-3xl font-bold"><%=doc.name%></h2><br>
+<h2 class="text-lg"><%=doc.tagline%></h2>
+<%if (doc.probstat){%>
+<div class="card">
+    <h2 class="text-2xl font-bold">Problem Statement</h2>
+<br>
+    <%=  doc.probstat %> 
+</div>
+<%}%>
+<div class="card">
+    <%=  doc.desc %> <br>
+    Checkout repo: <a class="hover:underline text-blue-600" href="<%=  doc.repo %>" target="_blank"> <%=  doc.repo %> </a> 
+</div>
+<div class="flex flex-col justify-evenly items-center">
+    <%for(var i=1;i<=doc.imgs;i++){%>
+        <div class="m-8 scale-75 hover:scale-90 transition-all duration-300 ease-linear overflow-clip rounded-lg shadow hover:skew-y-1">
+
+            <img  src="/projects/<%=doc.name%>/images/<%=i%>.png" alt="<%=i%>img">    
+        </div>
+    <%}%>
+  <embed class="transition-all duration-300 ease-linear rounded hover:skew-y-1 hover:scale-110 overflow-clip" src="/projects/<%=doc.name%>/pres.pdf" width="1400" height="700">
+<br><br>
+</div>
+
+
+
+
+    <img class="absolute -z-10 top-0 w-screen blur opacity-50" src="/projects/<%= doc.name %>/bgimg.png" alt="bgimg">
+    <!-- <script>
+      let ele =   document.getElementById("pres") 
+      ele.width =  ele.contentWindow.document.body.scrollWidth
+      ele.height =  ele.contentWindow.document.body.scrollHeight
+    </script> -->
+</body>
+</html>
