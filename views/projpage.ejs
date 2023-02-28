@@ -22,8 +22,20 @@
 </div>
 <%}%>
 <div class="card">
+    <h2 class="text-2xl font-bold">Description</h2>
     <%=  doc.desc %> <br>
     Checkout repo: <a class="hover:underline text-blue-600" href="<%=  doc.repo %>" target="_blank"> <%=  doc.repo %> </a> 
+</div>
+<div class="card">
+    <h2 class="text-2xl font-bold">Tech stack used</h2>
+    <ul>
+        <% for(let i=0;i<doc.tstack.length;i++) { %>
+            <li>
+                <%= doc.tstack[i]   %>
+            </li>
+            <% } %>
+    </ul>
+     <br>
 </div>
 <div class="flex flex-col justify-evenly items-center">
     <%for(var i=1;i<=doc.imgs;i++){%>
