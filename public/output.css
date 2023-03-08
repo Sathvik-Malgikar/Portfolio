@@ -640,6 +640,10 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.ml-40{
+  margin-left: 10rem;
+}
+
 .block{
   display: block;
 }
@@ -700,32 +704,6 @@ video {
   height: 100vh;
 }
 
-.h-96{
-  height: 24rem;
-}
-
-.h-1\/2{
-  height: 50%;
-}
-
-.h-fit{
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-.h-max{
-  height: -moz-max-content;
-  height: max-content;
-}
-
-.h-4\/5{
-  height: 80%;
-}
-
-.h-2\/3{
-  height: 66.666667%;
-}
-
 .w-6{
   width: 1.5rem;
 }
@@ -770,28 +748,6 @@ video {
   width: 100vw;
 }
 
-.w-80{
-  width: 20rem;
-}
-
-.w-64{
-  width: 16rem;
-}
-
-.w-2\/3{
-  width: 66.666667%;
-}
-
-.-skew-x-2{
-  --tw-skew-x: -2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.skew-y-1{
-  --tw-skew-y: 1deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .scale-150{
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
@@ -807,18 +763,6 @@ video {
 .scale-75{
   --tw-scale-x: .75;
   --tw-scale-y: .75;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.scale-50{
-  --tw-scale-x: .5;
-  --tw-scale-y: .5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-scale-150{
-  --tw-scale-x: -1.5;
-  --tw-scale-y: -1.5;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -864,6 +808,10 @@ video {
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .overflow-clip{
@@ -918,10 +866,6 @@ video {
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-transparent{
-  background-color: transparent;
 }
 
 .bg-\[url\(\'\.\/futuristic\.jpg\'\)\]{
@@ -1106,6 +1050,10 @@ video {
 
 .duration-1000{
   transition-duration: 1000ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .duration-300{
@@ -1311,11 +1259,6 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   transition-timing-function: linear;
-}
-
-.hover\:-skew-x-2:hover{
-  --tw-skew-x: -2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:skew-y-1:hover{
