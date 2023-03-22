@@ -1,9 +1,9 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose")
-const http = require("http")
 let app = express() 
-
+const dotenv = require("dotenv")
+dotenv.config()
 //blank
 
 
@@ -93,8 +93,8 @@ app.get("/projects/", (req,res)=>{
     mongoose.connection.on("connected",()=>{
     dbconnected = true
     console.log("db connected!");
-    let server = http.createServer(app)
-    server.listen(8080)
+    // let server = http.createServer(app)
+    app.listen(process.env.PORT || 5000)
     console.log("listening");
     })
     mongoose.connection.on("error",()=>{
