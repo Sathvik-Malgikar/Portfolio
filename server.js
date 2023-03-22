@@ -95,6 +95,7 @@ app.get("/projects/", (req,res)=>{
     console.log("db connected!");
     let server = http.createServer(app)
     server.listen(8080)
+    console.log("listening");
     })
     mongoose.connection.on("error",()=>{
     dbconnected = false
