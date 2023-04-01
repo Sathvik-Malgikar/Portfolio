@@ -17,7 +17,7 @@ app.set("views","./views")
 app.post("/form/",(req,res)=>{
     mongoose.connection.db.collection("portfolio-website-messages").insertOne(req.body).then(()=>{
        console.log("uploaded data :" ,req.body )
-        res.send("uploaded successfully !")
+        res.send("uploaded successfully !") 
     }).catch(()=>{
         res.sendStatus(500)
         res.send("internal server error!")
