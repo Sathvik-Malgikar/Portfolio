@@ -38,6 +38,17 @@
      <br>
 </div>
 
+<%if(doc.containsgif==true){%>
+
+<!-- <div class="rounded-md overflow-clip inline-block scale-50">
+    <img  src="/projects/<%=doc.name%>/anim.gif" alt="unable to load gif">
+</div> -->
+
+    <%}%>
+
+
+
+
 <% if(doc.vertical!=undefined){ %>
     <div class="grid grid-cols-2 gap-2 items-center">
         <%for(var i=1;i<=doc.imgs;i++){%>
@@ -62,12 +73,17 @@
     <% } %>
     
     <br><br>
-    <embed class="transition-all duration-300 ease-linear rounded hover:skew-y-1 hover:scale-110 overflow-clip" src="/projects/<%=doc.name%>/pres.pdf" width="1400" height="700">
+    <embed class="transition-all duration-300 ease-linear rounded scale-75 hover:scale-90 overflow-clip" src="/projects/<%=doc.name%>/pres.pdf" width="1400" height="700">
 
 
 
+        <%if(doc.containsgif==true){%>
+    <img class="absolute -z-10 top-0 w-screen blur opacity-50" src="/projects/<%= doc.name %>/anim.gif" alt="bgimg">
+    <%}else{%>
+        <img class="absolute -z-10 top-0 w-screen blur opacity-50" src="/projects/<%= doc.name %>/bgimg.png" alt="bgimg">
 
-    <img class="absolute -z-10 top-0 w-screen blur opacity-50" src="/projects/<%= doc.name %>/bgimg.png" alt="bgimg">
+    <%}%>
+
     <!-- <script>
       let ele =   document.getElementById("pres") 
       ele.width =  ele.contentWindow.document.body.scrollWidth

@@ -6,16 +6,24 @@
 @tailwind utilities;
 
 .infoattributes{
-    @apply w-10/12 rounded border p-5 bg-foreground text-center text-black font-Abel my-7;
+    @apply w-10/12 scale-75 rounded border p-5 bg-foreground text-center text-black font-Abel;
 }
 
 .rowbox{
-    @apply hover:ml-14 hover:scale-105 transition-all ease-out duration-500 ml-8;
+    @apply  hover:scale-105 transition-all ease-out duration-500;
 }
-
+.Liclass{
+    @apply text-2xl leading-8  ;
+}
+.Imageframe{
+    @apply  overflow-clip rounded-md  inline-block    ;
+}
+.Imageframe-profile{
+    @apply  overflow-clip rounded-full inline-block   ;
+}
 .card {
 
-    @apply text-lg rounded bg-foreground p-4 m-8 text-center text-black;
+    @apply text-lg rounded bg-foreground p-4 m-6 mx-4 text-center text-black;
 }
 
 
@@ -24,7 +32,11 @@
 }
 
 .button{
-    @apply inline-block p-3 m-4 rounded hover:scale-90 bg-foreground;
+    @apply inline-block p-3 m-3 rounded hover:scale-90 bg-foreground text-black;
+}
+
+.button-nobg{
+    @apply inline-block p-3 m-3 rounded hover:scale-90 bg-none text-white;
 }
 
 .button-submit{
