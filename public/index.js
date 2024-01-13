@@ -1,13 +1,26 @@
 
 
+function typeText(ele,st) {
+    for (let i = 0; i < st.length; i++) {
+      setTimeout(function() {
+        ele.text ( ele.text() + st[i] );
+      }, i * 50); // Adjust the delay according to your preference
+    }
+  }
+
+  
 
 $("body").ready(()=>{
-  
+    window.scrollTo({behavior : "smooth" , top : 0 })
     setTimeout(() => {
         
         $("#welcome").addClass("opacity-100")
         $("#welcome").removeClass("opacity-0")
-    }, 900);
+        typeText($("#welcome"),"Hi, I'm Sathvik, nice to have you here!");
+        setTimeout(() => {
+            $("#welcome").remove()
+        }, 3000);
+    }, 500);
     setTimeout(() => {
         
         $("#welcomediv").removeClass("backdrop-blur-lg")
@@ -17,8 +30,8 @@ $("body").ready(()=>{
         $("#welcome").addClass("top-3")
         setTimeout(() => {
             makevisible()
-        }, 900);
-    }, 2900);
+        }, 500);
+    }, 1100);
 })
 
 

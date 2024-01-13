@@ -27,6 +27,7 @@
 }
 
 
+
 .scrolltap{
     @apply hover:scale-90 hover:shadow-md hover:shadow-black transition-all duration-300 ease-in-out;
 }
