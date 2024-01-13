@@ -16,7 +16,7 @@ $("body").ready(()=>{
         
         $("#welcome").addClass("opacity-100")
         $("#welcome").removeClass("opacity-0")
-        typeText($("#welcome"),"Hi, I'm Sathvik, nice to have you here!");
+        typeText($("#welcome"),"Hi, I'm Sathvik, nice to have you here! Checkout my projects below.");
         setTimeout(() => {
             $("#welcome").remove()
         }, 3000);

@@ -7,6 +7,10 @@
   <link href="output.css" rel="stylesheet" />
   <title>Sathvik Malgikar</title>
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
 </head>
 
 
@@ -49,7 +53,7 @@
 
         <div class="Imageframe-profile m-3 w-1/3" >
   
-          <img width="200px" src="/miniNewProfile.png"> </img>
+          <img style="transform: scaleX(-1);" width="200px" src="/miniNewProfile.png"> </img>
       </div>
 <div class="w-2/3">
 <h3 class="text-4xl m-1">Sathvik Malgikar</h3>
@@ -85,67 +89,72 @@
     </div>
   </div>
     
-    
-    <div>
-      <div class="infoattributes">
-        <h3 class="text-5xl">Education <img width="100" class="m-8 right-15 border-b-4 inline-block" src="./scholar.png" alt="avatar"></img></h3>
-        <br />
-        <ul class="text-2xl">
-         
-          <li class="Liclass" > * Pes University, Bangalore.
-            Bachelor of technology Computers Science Engineer
-            Currently a sophomore, looking for opportunities</li><br>
-          
-          <li class="Liclass" >*
-            MES Pre-university College,Sirsi.
-          Pre-University
-          Studied PCMC for two years and gave my 12th state board exam as well as competitive exams 
-          like CET and JEE
-          </li><br>
-
-          <li class="Liclass" >*
-            Don bosco high school, Sirsi.
-          high school
-          Completed my high school and gave my board exams
-          </li><br>
-
-         <li class="Liclass" >*
-          St Anthony's English Medium School, Sirsi.
-          Primary school
-          Finished my nursery and primary classes.
-         </li><br>
-        </ul>
-      </div>
-      
+  <!-- <ul class="nav nav-tabs">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">Menu 1</a></li>
+    <li><a href="#">Menu 2</a></li>
+    <li><a href="#">Menu 3</a></li>
+  </ul> -->
+  <div class="card w-9/12 self-start" >
+    <div class="w3-bar w3-cream">
+      <button class="w3-bar-item w3-button" onclick="openCity('Education')">Education</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('Experience')">Experience</button>
+      <button class="w3-bar-item w3-button" onclick="openCity('Projects')">Projects</button>
     </div>
 
-    <div class="l-0 flex flex-row justify-evenly items-center">
-
-      <div class="infoattributes inline-block mx-0">
-        <h3 class="text-5xl">Experience <img width="100" class="m-4 right-15 border-b-4 inline-block" src="xp.png" alt="avatar"></img></h3>
-        <br />
-        <ul class="list-disc px-6 text-start">
-          <li class="Liclass">  Participated in  application-based group hackathons and have ample experience in 
-            building applications to solve practical problems, and hence won some prizes and 
-            certificates.
-            </li>
-          <li class="Liclass"> Made some websites using MERN stack and hosted them online.</li>
-          <li class="Liclass"> Made a VR game based on space using Unity game engine </li>
-        </ul>
-      </div>
-
+    <div id="Education" class="infoattributes card m-0" style="display:none">
+    <h3 class="text-4xl">Education <img width="100" class="right-15 border-b-4 inline-block" src="./scholar.png" alt="avatar"></img></h3>
       
-      
-
-     
+      <ul class="text-2xl text-start">
+       
+        <li class="text-xl"><p class="italic">* 2021-25</p>PES University, Bangalore.
+          Btech in CSE
+          Currently in 3rd year</li><br>
+        
+        <li class="text-xl"><p class="italic" >* 2019-21</p>
+          MES PU College,Sirsi.
+        gave competitive exams (CET and JEE)
+        </li><br>
+  
+        <li class="text-xl" > <p class="italic">* 2016-19</p>
+          Don bosco high school, Sirsi.
+        </li>
+   
+      </ul>
+    </div>
+    
+    <div  id="Experience" class="infoattributes card" >
+      <h3 class="text-5xl">Experience <img width="100" class="m-4 right-15 border-b-4 inline-block" src="xp.png" alt="avatar"></img></h3>
+      <br />
+      <ul class="list-disc px-6 text-start">
+        <li class="Liclass">  Participated in  application-based group hackathons and have ample experience in 
+          building applications to solve practical problems, and hence won some prizes and 
+          certificates.
+          </li>
+        <li class="Liclass"> Made some websites using MERN stack and hosted them online.</li>
+        <li class="Liclass"> Made a VR game based on space using Unity game engine </li>
+      </ul>
     </div>
   
-    <div>
-      <a class="inline button-nobg text-white mx-0 h-24 w-32" href="/projects">
-        Checkout all of my projects! <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-    <path fill-rule="evenodd" d="M15.75 2.25H21a.75.75 0 01.75.75v5.25a.75.75 0 01-1.5 0V4.81L8.03 17.03a.75.75 0 01-1.06-1.06L19.19 3.75h-3.44a.75.75 0 010-1.5zm-10.5 4.5a1.5 1.5 0 00-1.5 1.5v10.5a1.5 1.5 0 001.5 1.5h10.5a1.5 1.5 0 001.5-1.5V10.5a.75.75 0 011.5 0v8.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V8.25a3 3 0 013-3h8.25a.75.75 0 010 1.5H5.25z" clip-rule="evenodd" />
-    </svg></a>
+    
+    <div id="Projects" class="infoattributes card" style="display:none">
+      <div>
+        <a class="inline button-nobg" href="/projects">
+          Checkout all of my projects! <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+      <path fill-rule="evenodd" d="M15.75 2.25H21a.75.75 0 01.75.75v5.25a.75.75 0 01-1.5 0V4.81L8.03 17.03a.75.75 0 01-1.06-1.06L19.19 3.75h-3.44a.75.75 0 010-1.5zm-10.5 4.5a1.5 1.5 0 00-1.5 1.5v10.5a1.5 1.5 0 001.5 1.5h10.5a1.5 1.5 0 001.5-1.5V10.5a.75.75 0 011.5 0v8.25a3 3 0 01-3 3H5.25a3 3 0 01-3-3V8.25a3 3 0 013-3h8.25a.75.75 0 010 1.5H5.25z" clip-rule="evenodd" />
+      </svg></a>
+      </div>
     </div>
+  </div>
+  
+    <div>
+    
+      
+    </div>
+
+  
+  
+  
 
 
   </div>

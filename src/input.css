@@ -1,83 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.infoattributes{
-    @apply rounded border p-2 bg-foreground text-center text-black font-Abel;
+.infoattributes {
+  @apply border;
 }
 
-.rowbox{
-    @apply  hover:scale-105 transition-all ease-linear duration-100;
+.rowbox {
+  @apply hover:scale-105 transition-all ease-linear duration-100;
 }
-.Liclass{
-    @apply text-2xl leading-8  ;
+
+.Imageframe {
+  @apply overflow-clip rounded-md inline-block;
 }
-.Imageframe{
-    @apply  overflow-clip rounded-md  inline-block    ;
-}
-.Imageframe-profile{
-    @apply  overflow-clip rounded-full inline-block m-2   ;
+.Imageframe-profile {
+    transform: scaleX(-1);
+  @apply overflow-clip rounded-full inline-block m-2;
 }
 .card {
-
-    @apply text-lg rounded bg-foreground m-4 text-center text-black opacity-95;
+  @apply text-lg rounded bg-foreground m-4 text-center text-black opacity-95;
 }
 
-.scrolltap{
-    @apply hover:scale-90 hover:shadow-md hover:shadow-black transition-all duration-300 ease-in-out;
+.scrolltap {
+  @apply hover:scale-90 hover:shadow-md hover:shadow-black transition-all duration-300 ease-in-out;
 }
 
-.button{
-    @apply inline-block p-3 m-3 rounded hover:scale-90 bg-foreground text-black;
+.button {
+  @apply inline-block p-3 m-3 rounded hover:scale-90 bg-foreground text-black;
 }
 
-.button-nobg{
-    @apply inline-block p-3 m-3 rounded hover:scale-90 bg-none ;
+.button-nobg {
+  @apply inline-block p-3 m-3 rounded hover:scale-90 bg-none;
 }
 
-.button-submit{
-    @apply inline-block p-3 px-10 m-4 rounded hover:bg-white hover:scale-90 bg-foreground;
+.button-submit {
+  @apply inline-block p-3 px-10 m-4 rounded hover:bg-white hover:scale-90 bg-foreground;
 }
 
-.bargraph{
-@apply     m-8 my-auto h-3 bg-background rounded;
+.bargraph {
+  @apply m-8 my-auto h-3 bg-background rounded;
 }
 
-.circleavatar{
-@apply inline-block m-8 h-28 w-28 rounded-full bg-background;
+.circleavatar {
+  @apply inline-block m-8 h-28 w-28 rounded-full bg-background;
 }
 
-.vruler{
-@apply inline-block my-4 border-foreground border min-h-full;
+.vruler {
+  @apply inline-block my-4 border-foreground border min-h-full;
 }
 
-.modal-bg{
-@apply backdrop-blur-md bg-opacity-60 bg-black fixed top-0 left-0 h-screen w-screen flex items-center justify-center;
+.modal-bg {
+  @apply backdrop-blur-md bg-opacity-60 bg-black fixed top-0 left-0 h-screen w-screen flex items-center justify-center;
 }
 
-.modal{
-@apply bg-foreground rounded-md   text-black text-xl font-Abel p-4 flex-col flex justify-start items-center;
+.modal {
+  @apply bg-foreground rounded-md   text-black text-xl font-Abel p-4 flex-col flex justify-start items-center;
 }
 
 .inputfield {
-    @apply bg-white tracking-wide border-2 border-background rounded-md  m-4 ;
+  @apply bg-white tracking-wide border-2 border-background rounded-md  m-4;
 }
 
-
-.toast-hider{
-    @apply opacity-0 hidden;
+.toast-hider {
+  @apply opacity-0 hidden;
 }
 .toast {
-    @apply fixed left-12 top-36 rounded bg-foreground max-w-md p-4 text-2xl font-Abel tracking-wide text-center m-6 transition-opacity duration-500 ease-linear ;
+  @apply fixed left-12 top-36 rounded bg-foreground max-w-md p-4 text-2xl font-Abel tracking-wide text-center m-6 transition-opacity duration-500 ease-linear;
 }
 
-h3 ,h1 {
-    @apply text-indigo-500
+h3,
+h1 {
+  @apply text-indigo-500;
 }
 
-h3 ,h1,p {
- user-select: none;
+h3,
+h1,
+p,
+ul,
+li {
+  user-select: none;
 }
