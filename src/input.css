@@ -6,11 +6,11 @@
 @tailwind utilities;
 
 .infoattributes{
-    @apply w-10/12 scale-75 rounded border p-5 bg-foreground text-center text-black font-Abel;
+    @apply rounded border p-2 bg-foreground text-center text-black font-Abel;
 }
 
 .rowbox{
-    @apply  hover:scale-105 transition-all ease-out duration-500;
+    @apply  hover:scale-105 transition-all ease-linear duration-100;
 }
 .Liclass{
     @apply text-2xl leading-8  ;
@@ -19,11 +19,11 @@
     @apply  overflow-clip rounded-md  inline-block    ;
 }
 .Imageframe-profile{
-    @apply  overflow-clip rounded-full inline-block   ;
+    @apply  overflow-clip rounded-full inline-block m-2   ;
 }
 .card {
 
-    @apply text-lg rounded bg-foreground p-4 m-6 mx-4 text-center text-black;
+    @apply text-lg rounded bg-foreground m-4 text-center text-black opacity-95;
 }
 
 
@@ -37,7 +37,7 @@
 }
 
 .button-nobg{
-    @apply inline-block p-3 m-3 rounded hover:scale-90 bg-none text-white;
+    @apply inline-block p-3 m-3 rounded hover:scale-90 bg-none ;
 }
 
 .button-submit{
@@ -76,3 +76,10 @@
     @apply fixed left-12 top-36 rounded bg-foreground max-w-md p-4 text-2xl font-Abel tracking-wide text-center m-6 transition-opacity duration-500 ease-linear ;
 }
 
+h3 ,h1 {
+    @apply text-indigo-500
+}
+
+h3 ,h1,p {
+ user-select: none;
+}
