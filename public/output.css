@@ -656,6 +656,11 @@ video {
   margin-right: 0px;
 }
 
+.mx-2{
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .my-3{
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
@@ -893,6 +898,10 @@ video {
 
 .rounded{
   border-radius: 0.25rem;
+}
+
+.rounded-sm{
+  border-radius: 0.125rem;
 }
 
 .rounded-md{
@@ -1141,6 +1150,110 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+/* ---------- Container for the orbiting circles animation ---------- */
+
+#circle-orbit-container {
+  position: relative;
+  top: 25px;
+  left: 30%;
+  height: 300px;
+  width: 300px;
+}
+
+/* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+
+#middle-orbit {
+  position: relative;
+  top: 30%;
+  left: 30%;
+  width: 225px;
+  height: 225px;
+  border: 2px #4a437f dashed;
+  border-radius: 100%;
+  animation: spin-right 15s linear infinite;
+  scale: 1.8;
+}
+
+.garland-image-commons {
+  animation: spin-left 15s linear infinite;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+}
+
+.garland-body{
+  height: 70vh;
+  align-items: center;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+
+.garland-image1 {
+  top: 10%;
+  left: 10%;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+
+.garland-image2 {
+  top: 0%;
+  left: 44%;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+
+.garland-image3 {
+  top: 44%;
+  right: 0%;
+}
+
+.garland-image4 {
+  bottom: 0%;
+  left: 57%;
+}
+
+.garland-image5 {
+  top: 76%;
+  left: 20%;
+}
+
+.garland-image6 {
+  top: 50%;
+  left: 0%;
+}
+
+.garland-image7 {
+  top: 10%;
+  left: 78%;
+}
+
+/* ---------- Animation ---------- */
+
+@keyframes spin-right {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------- Animation ---------- */
+
+@keyframes spin-left {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.garland-center-div {
+  width: 200px;
+  /* Adjust size as needed */
+  height: 100px;
+  position: relative;
+  left: 34%;
+  bottom: 13%;
+  border-radius: 50%;
+  z-index: 1;
+}
+
 .Imageframe{
   display: inline-block;
   overflow: clip;
@@ -1203,11 +1316,9 @@ video {
 }
 
 .button-nobg{
-  margin: 0.75rem;
   display: inline-block;
   border-radius: 0.25rem;
   background-image: none;
-  padding: 0.75rem;
 }
 
 .button-nobg:hover{

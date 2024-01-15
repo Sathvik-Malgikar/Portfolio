@@ -12,12 +12,111 @@
 .rowbox {
   @apply hover:scale-105 transition-all ease-linear duration-100;
 }
+/* ---------- Container for the orbiting circles animation ---------- */
+#circle-orbit-container {
+  position: relative;
+  top: 25px;
+  left: 30%;
+  height: 300px;
+  width: 300px;
+}
+
+/* ---------- Middle orbit - This is the circles second closest to the central point ---------- */
+#middle-orbit {
+  position: relative;
+  top: 30%;
+  left: 30%;
+  width: 225px;
+  height: 225px;
+  border: 2px #4a437f dashed;
+  border-radius: 100%;
+  -webkit-animation: spin-right 15s linear infinite;
+  animation: spin-right 15s linear infinite;
+  scale: 1.8;
+}
+
+.garland-image-commons {
+  -webkit-animation: spin-left 15s linear infinite;
+  animation: spin-left 15s linear infinite;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+}
+
+.garland-body{
+  height: 70vh;
+  align-items: center;
+}
+
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.garland-image1 {
+  top: 10%;
+  left: 10%;
+}
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.garland-image2 {
+  top: 0%;
+  left: 44%;
+}
+/* ---------- Repeating styles for the inner orbiting circles ---------- */
+.garland-image3 {
+  top: 44%;
+  right: 0%;
+}
+
+.garland-image4 {
+  bottom: 0%;
+  left: 57%;
+}
+.garland-image5 {
+  top: 76%;
+  left: 20%;
+}
+.garland-image6 {
+  top: 50%;
+  left: 0%;
+}
+.garland-image7 {
+  top: 10%;
+  left: 78%;
+}
+
+/* ---------- Animation ---------- */
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/* ---------- Animation ---------- */
+@keyframes spin-left {
+  100% {
+    -webkit-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -ms-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+.garland-center-div {
+  width: 200px; /* Adjust size as needed */
+  height: 100px;
+  position: relative;
+  left: 34%;
+  bottom: 13%;
+  border-radius: 50%;
+  z-index: 1;
+}
 
 .Imageframe {
   @apply overflow-clip rounded-md inline-block;
 }
 .Imageframe-profile {
-    transform: scaleX(-1);
+  transform: scaleX(-1);
   @apply overflow-clip rounded-full inline-block m-2;
 }
 .card {
@@ -33,7 +132,7 @@
 }
 
 .button-nobg {
-  @apply inline-block p-3 m-3 rounded hover:scale-90 bg-none;
+  @apply inline-block rounded hover:scale-90 bg-none;
 }
 
 .button-submit {
