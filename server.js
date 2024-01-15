@@ -100,7 +100,7 @@ app.get("/certificates/", (req, res) => {
         // console.log(certificatesBase64Data[5]["link"])
         res.setHeader("Content-Type", "text/html")
 
-        res.render("certificates.ejs", { "certificates": certificatesBase64Data }, (err, html) => {
+        res.render("certificatespage.ejs", { "certificates": certificatesBase64Data }, (err, html) => {
             if (err) {
 
                 console.error(err)
