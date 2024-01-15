@@ -8,7 +8,7 @@ const path = require("path")
 dotenv.config()
 //blank
 
-const readAllCertificates = () => {
+const readAllCertificates = async () => {
     let fileNames = fs.readdirSync(path.join(__dirname, "public/certificates"))
 
     return fileNames.map(fn => {
@@ -23,7 +23,7 @@ app.use(express.static(__dirname + "/public"))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.set("view engine", "ejs")
-app.set("env","development")
+app.set("env", "development")
 app.set("views", "./views")
 
 app.post("/form/", (req, res) => {
@@ -94,20 +94,24 @@ app.get("/projects/", (req, res) => {
 
 app.get("/certificates/", (req, res) => {
 
-    let certificatesBase64Data = readAllCertificates();
-    console.log("read complete")
-    // console.log(certificatesBase64Data[5]["link"])
-    res.setHeader("Content-Type","text/html")
-    
-    res.render("certificates.ejs",  { "certificates": certificatesBase64Data },(err,html)=>{
-        if(err){
+    readAllCertificates().then(certificatesBase64Data => {
 
-            console.error(err)
-        }else{
-            res.send(html)
-        }
+        console.log("read complete")
+        // console.log(certificatesBase64Data[5]["link"])
+        res.setHeader("Content-Type", "text/html")
+
+        res.render("certificates.ejs", { "certificates": certificatesBase64Data }, (err, html) => {
+            if (err) {
+
+                console.error(err)
+            } else {
+                res.send(html)
+            }
+        })
+        // res.render("blank.ejs", { "certificates": certificatesBase64Data })
+    }).catch(err => {
+        console.error(err)
     })
-    // res.render("blank.ejs", { "certificates": certificatesBase64Data })
 
 })
 
