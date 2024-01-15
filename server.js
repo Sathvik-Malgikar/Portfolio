@@ -13,8 +13,9 @@ const readAllCertificates = () => {
 
     return fileNames.map(fn => {
         let bfr = fs.readFileSync(path.join(__dirname, "public/certificates", fn))
-        return { "name" : fn ,  "link": bfr.toString("base64"), "type": fn.slice(fn.lastIndexOf(".") + 1) }
+        return { "name": fn, "link": bfr.toString("base64"), "type": fn.slice(fn.lastIndexOf(".") + 1) }
     })
+
 }
 
 
@@ -92,9 +93,9 @@ app.get("/projects/", (req, res) => {
 
 app.get("/certificates/", (req, res) => {
 
-
     let certificatesBase64Data = readAllCertificates();
-    // console.log(certificatesBase64Data[0]["type"])
+    console.log("read complete")
+    console.log(certificatesBase64Data[0]["name"])
     res.render("certificates.ejs", { "certificates": certificatesBase64Data })
 
 })
