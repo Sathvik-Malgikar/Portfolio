@@ -23,6 +23,7 @@ app.use(express.static(__dirname + "/public"))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.set("view engine", "ejs")
+app.set("env","development")
 app.set("views", "./views")
 
 app.post("/form/", (req, res) => {
@@ -95,7 +96,7 @@ app.get("/certificates/", (req, res) => {
 
     let certificatesBase64Data = readAllCertificates();
     console.log("read complete")
-    console.log(certificatesBase64Data[5]["link"])
+    // console.log(certificatesBase64Data[5]["link"])
     res.setHeader("Content-Type","text/html")
     
     res.render("certificates.ejs",  { "certificates": certificatesBase64Data },(err,html)=>{
