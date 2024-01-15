@@ -95,8 +95,10 @@ app.get("/certificates/", (req, res) => {
 
     let certificatesBase64Data = readAllCertificates();
     console.log("read complete")
-    console.log(certificatesBase64Data[0]["name"])
-    res.render("certificates.ejs", { "certificates": certificatesBase64Data },(err,html)=>{
+    console.log(certificatesBase64Data[5]["link"])
+    res.setHeader("Content-Type","text/html")
+    
+    res.render("certificates.ejs",  { "certificates": certificatesBase64Data },(err,html)=>{
         if(err){
 
             console.error(err)
