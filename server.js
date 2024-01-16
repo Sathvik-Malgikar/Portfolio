@@ -12,8 +12,8 @@ const readAllCertificates = async () => {
     let fileNames = fs.readdirSync(path.join(__dirname, "public/certificates"))
 
     return fileNames.map(fn => {
-        let bfr = fs.readFileSync(path.join(__dirname, "public/certificates", fn))
-        return { "name": fn, "link": bfr.toString("base64"), "type": fn.slice(fn.lastIndexOf(".") + 1) }
+        // let bfr = fs.readFileSync(path.join(__dirname, "public/certificates", fn))
+        return { "name": fn, "link": path.join("/certificates/",fn), "type": fn.slice(fn.lastIndexOf(".") + 1) }
     })
 
 }
@@ -94,13 +94,13 @@ app.get("/projects/", (req, res) => {
 
 app.get("/certificates/", (req, res) => {
 
-    readAllCertificates().then(certificatesBase64Data => {
+    readAllCertificates().then(certificatesData => {
 
         console.log("read complete")
-        // console.log(certificatesBase64Data[5]["link"])
+        console.log(certificatesData[5]["link"])
         res.setHeader("Content-Type", "text/html")
 
-        res.render("certificatespage.ejs", { "certificates": certificatesBase64Data }, (err, html) => {
+        res.render("certificatespage.ejs", { "certificates": certificatesData }, (err, html) => {
             if (err) {
 
                 console.error(err)
@@ -108,7 +108,7 @@ app.get("/certificates/", (req, res) => {
                 res.send(html)
             }
         })
-        // res.render("blank.ejs", { "certificates": certificatesBase64Data })
+        // res.render("blank.ejs", { "certificates": certificatesData })
     }).catch(err => {
         console.error(err)
     })

@@ -17,16 +17,15 @@
             <% for( let i = 0; i < certificates.length; i+=2 ) { %>
 
             <% if (certificates[i]["type"]=="pdf") { %>
-            <!-- <div class="certificate" ><iframe src='data:application/pdf;base64,<%=certificates[i].link%>'  ></iframe><p><%=certificates[i].name%></p></div>  -->
-<p>pdf</p>
+    <p>error file format PDF not supported</p>
             <% } else if  (certificates[i]["type"]=="png") { %>
              
-                <!-- <div class="certificate" ><img  src="data:image/png;base64,<%=certificates[i].link%>" /><p><%=certificates[i].name%></p></div> -->
-<p>png</p>
+                <div class="certificate" ><img  src="<%=certificates[i].link%>" /><p><%=certificates[i].name%></p></div>
+<!-- <p>png</p> -->
                 <% } else { %>
                     
-                    <!-- <div class="certificate" ><img  src="data:image/jpeg;base64,<%=certificates[i].link%>" /><p><%=certificates[i].name%></p></div> -->
-                    <p>jpg</p>
+                    <div class="certificate" ><img  src="<%=certificates[i].link%>" /><p><%=certificates[i].name%></p></div>
+                    <!-- <p>jpg</p> -->
                     
                     <% } %>
                     <% } %>
@@ -36,18 +35,15 @@
             <% for( let i = 1; i < certificates.length; i+=2 ) { %>
 
             <% if (certificates[i]["type"]=="pdf") { %>
-            <!-- <div class="certificate" ><iframe src='data:application/pdf;base64,<%=certificates[i].link%>'  ></iframe><p><%=certificates[i].name%></p></div>  -->
-<p>pdf</p>
-<% } else if  (certificates[i]["type"]=="png") { %>
-    
-    <!-- <div class="certificate" ><img  src="data:image/png;base64,<%=certificates[i].link%>" /><p><%=certificates[i].name%></p></div> -->
-    <p>png</p>
-    
-    <% } else { %>
-        
-        <!-- <div class="certificate" ><img  src="data:image/jpeg;base64,<%=certificates[i].link%>" /><p><%=certificates[i].name%></p></div> -->
-        <p>jpeg</p>
+    <p>error file format PDF not supported</p>
+            <% } else if  (certificates[i]["type"]=="png") { %>
+             
+                <div class="certificate" ><img  src="<%=certificates[i].link%>" /><p><%=certificates[i].name%></p></div>
+<!-- <p>png</p> -->
+                <% } else { %>
                     
+                    <div class="certificate" ><img  src="<%=certificates[i].link%>" /><p><%=certificates[i].name%></p></div>
+                    <!-- <p>jpg</p> -->
                     
                     <% } %>
                     <% } %>
