@@ -163,6 +163,10 @@
     @apply inline-block m-8 h-28 w-28 rounded-full bg-background;
 }
 
+.circleavatar-trans {
+    @apply inline-block m-8 h-28 w-28;
+}
+
 .vruler {
     @apply inline-block my-4 border-foreground border min-h-full;
 }

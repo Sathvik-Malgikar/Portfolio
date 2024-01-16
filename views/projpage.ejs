@@ -8,7 +8,19 @@
         <%=  doc.name %> - <%=  doc.tagline %> 
     </title>
     <link rel="stylesheet" href="/output.css" type="text/css">
-  
+  <script>
+    function loadProjectData(){
+        fetch("/projects/<%=doc.name%>/pres.pdf").then(data=>{
+   return data.text()
+    }).then(html=>{
+        let ele= document.getElementById("projectDescriptionEmbed")
+        console.log("set HTML to project")
+        // console.log(html)
+        ele.innerHTML = html
+    })
+    }
+    loadProjectData();
+  </script>
 </head>
 <body class="bg-black text-white text-center opacity-100">
     <br><br>
@@ -73,7 +85,7 @@
     <% } %>
     
     <br><br>
-    <embed class="transition-all duration-300 ease-linear rounded scale-75 hover:scale-90 overflow-clip" src="/projects/<%=doc.name%>/pres.pdf" width="1400" height="700">
+    <div id="projectDescriptionEmbed" class="transition-all duration-300 ease-linear rounded scale-75 hover:scale-90 overflow-clip" width="1400" height="700"></div>
 
 
 
