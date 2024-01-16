@@ -86,6 +86,7 @@ app.get("/projects/", (req, res) => {
         loadcategories(categories, docs).then((projobjs) => {
 
             console.log("before render", projobjs);
+            res.send("<p>Hello</p>")
             res.render("projects.ejs", { "projobjs": projobjs })
         })
     })
