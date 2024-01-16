@@ -23,6 +23,9 @@ function toggleModal() {
 
 }
 function openCity(cityName) {
+    if(cityName=="Certifications"){
+        loadEmbedWindow()
+    }
     var i;
     var x = document.getElementsByClassName("infoattributes");
     for (i = 0; i < x.length; i++) {
@@ -75,4 +78,15 @@ function toast(msg) {
         }, 3000);
     }
 
+}
+
+function loadEmbedWindow(){
+    fetch("/certificates").then(data=>{
+   return data.text()
+    }).then(html=>{
+        let ele= $("#embedWindow")
+        console.log("set HTML")
+        // console.log(html)
+        ele.html(html)
+    })
 }
