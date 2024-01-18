@@ -23,7 +23,7 @@ function toggleModal() {
 
 }
 function openCity(cityName) {
-    if(cityName=="Certifications"){
+    if (cityName == "Certifications") {
         loadEmbedWindow()
     }
     var i;
@@ -80,13 +80,14 @@ function toast(msg) {
 
 }
 
-function loadEmbedWindow(){
-    fetch("/certificates").then(data=>{
-   return data.text()
-    }).then(html=>{
-        let ele= $("#embedWindow")
+function loadEmbedWindow() {
+    fetch("/certificates").then(data => {
+        return data.text()
+    }).then(html => {
+        let ele = $("#embedWindow")
         console.log("set HTML")
         // console.log(html)
         ele.html(html)
     })
 }
+

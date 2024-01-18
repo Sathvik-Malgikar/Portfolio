@@ -6,7 +6,9 @@
     <title>Sathvik Malgikar's projects</title>
     <link rel="stylesheet" href="/output.css" type="text/css">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
-  <!-- <script src="./projects.js"></script> -->
+    <script type="text/javascript" src="/jquery-3.6.3.js"></script>
+    <script defer type="text/javascript" src="/projects.js"></script>
+
 </head>
 <body class="bgimgfix">
 
@@ -25,10 +27,10 @@
         </p>
     </div>
 
-    <div class="rounded bg-foreground opacity-90 text-center m-6 p-4">
+    <div class="rounded bg-[#dddddd] opacity-90 text-center m-6 p-4 overflow-hidden">
 <h2 class="text-3xl font-concertOne">Dashboard</h2>
 <h2 class="text-xl font-semibold text-start" >Frameworks/techonologies used:</h2>
-<div class="flex flex-wrap" >
+<div class="marquee" >
 <img class="circleavatar-trans" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" /> 
 <img class="circleavatar-trans" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Pytest_logo.svg" /> 
 <img class="circleavatar-trans" src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Unity_2021.svg" /> 
@@ -71,7 +73,7 @@
     </div>
 
     <!-- links to projects -->
-    <div class="rounded bg-foreground opacity-90 text-center m-6 p-4">
+    <div class="rounded bg-[#dddddd] opacity-90 text-center m-6 p-4">
 <h5 class="text-2xl font-bold">My projects:</h5>
 <br>
 <div class="flex flex-col justify-evenly">
@@ -81,11 +83,22 @@
     <p class="text-xl font-semibold" >
         <%=  projobjs[i]["category"]  %> 
     </p> 
+    <!-- <div class="carousel">
+        <div class="carousel-inner" id="carousel-inner">
+          <div class="carousel-item">Item 1</div>
+          <div class="carousel-item">Item 2</div>
+          <div class="carousel-item">Item 3</div>
+     
+        </div>
+      </div>
+      
+      <button onclick="prevSlide()">Previous</button>
+      <button onclick="nextSlide()">Next</button> -->
 
     <div class="grid justify-between grid-cols-2 gap-4 w-full">
         <% for(var j=0;j<projobjs[i]["objs"].length;j++ )  {  %>
-            <div class="bg-slate-300  inline-block m-6 p-4 rounded-md">
-                <a href='/projects/<%= projobjs[i]["objs"][j]["name"]%>'>
+            <div class="bg-foreground border-black border  inline-block m-6 p-4 rounded-md">
+               
 
                     <div class="flex projdiv" >
                         
@@ -97,8 +110,8 @@
                         <p >  <%=   projobjs[i]["objs"][j]["desc"]  %>     </p>
                         
                     </div>
-                </a>
-                <p class="font-semibold">Click to know more!</p>
+           
+      
             </div>
             
                     <% } %>
@@ -109,6 +122,6 @@
 </div>
     </div>
 
-    <script src="jquery-3.6.3.js"></script>
+    
 </body>
 </html>

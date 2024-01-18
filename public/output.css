@@ -643,10 +643,6 @@ video {
   margin: 0.5rem;
 }
 
-.m-10{
-  margin: 2.5rem;
-}
-
 .m-6{
   margin: 1.5rem;
 }
@@ -810,10 +806,6 @@ video {
   flex-direction: column;
 }
 
-.flex-wrap{
-  flex-wrap: wrap;
-}
-
 .items-center{
   align-items: center;
 }
@@ -844,6 +836,10 @@ video {
 
 .self-start{
   align-self: flex-start;
+}
+
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .overflow-clip{
@@ -884,6 +880,11 @@ video {
   border-bottom-width: 4px;
 }
 
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .bg-foreground{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -894,9 +895,9 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.bg-slate-300{
+.bg-\[\#dddddd\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+  background-color: rgb(221 221 221 / var(--tw-bg-opacity));
 }
 
 .bg-black{
@@ -914,10 +915,6 @@ video {
 
 .p-6{
   padding: 1.5rem;
-}
-
-.p-2{
-  padding: 0.5rem;
 }
 
 .px-6{
@@ -1027,16 +1024,12 @@ video {
   opacity: 1;
 }
 
-.opacity-80{
-  opacity: 0.8;
+.opacity-90{
+  opacity: 0.9;
 }
 
 .opacity-50{
   opacity: 0.5;
-}
-
-.opacity-90{
-  opacity: 0.9;
 }
 
 .shadow{
@@ -1332,6 +1325,64 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 25s linear infinite;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 300px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Center the carousel */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* not really needed to be added */
+
+.marquee-item{
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  width: 300px;
+  /* Adjust as needed */
+  margin: 0 auto;
+  /* Center the carousel */
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
 }
 
 .bgimgfix{

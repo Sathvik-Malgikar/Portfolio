@@ -59,28 +59,28 @@ async function loadcategories(cats, alldocs) {
     return projtits
 }
 
-app.get("/projects/:name", (req, res) => {
+// app.get("/projects/:name", (req, res) => {
 
-    if ("name" in req.params && req.params.name != '') {
-        mongoose.connection.collection("portfolio-projects").findOne({ "name": req.params["name"] }).then(doc => {
-            if (!doc) {
-                res.send("project document not found !")
-                return
-            }
-            console.log("param route doc", doc.name);
-            res.render("projpage.ejs", { "doc": doc })
-        })
+//     if ("name" in req.params && req.params.name != '') {
+//         mongoose.connection.collection("portfolio-projects").findOne({ "name": req.params["name"] }).then(doc => {
+//             if (!doc) {
+//                 res.send("project document not found !")
+//                 return
+//             }
+//             console.log("param route doc", doc.name);
+//             res.render("projpage.ejs", { "doc": doc })
+//         })
 
-    } else {
-        res.send("project not found!")
-    }
+//     } else {
+//         res.send("project not found!")
+//     }
 
-})
+// })
 
 
 app.get("/projects/", (req, res) => {
 
-    let categories = ["Hackathon", "Apps"]
+    let categories = ["Personal","Internship","Hackathon"]
     mongoose.connection.collection("portfolio-projects").find().toArray().then(docs => {
 
         loadcategories(categories, docs).then((projobjs) => {
