@@ -83,39 +83,34 @@
     <p class="text-xl font-semibold" >
         <%=  projobjs[i]["category"]  %> 
     </p> 
-    <!-- <div class="carousel">
-        <div class="carousel-inner" id="carousel-inner">
-          <div class="carousel-item">Item 1</div>
-          <div class="carousel-item">Item 2</div>
-          <div class="carousel-item">Item 3</div>
+    <div class="carousel">
+        <div data-index="<%=i%>" class="carousel-inner" id="carousel-inner">
+            <% for(var j=0;j<projobjs[i]["objs"].length;j++ )  {  %>
+                <div data-index="<%=i%>" class="bg-foreground border-black border  inline-block p-2 rounded-md carousel-item">
+                   
+    
+                        <div class="flex projdiv" >
+                            
+                            <div>
+                    
+                                <p class="text-lg font-semibold">  <%=   projobjs[i]["objs"][j]["name"]  %>     </p>
+                                <p class="text-md">  <%=   projobjs[i]["objs"][j]["tagline"]  %>     </p>
+                            </div>
+                            <p >  <%=   projobjs[i]["objs"][j]["desc"]  %>     </p>
+                            
+                        </div>
+               
+          
+                </div>
+                
+                        <% } %>
      
         </div>
       </div>
       
-      <button onclick="prevSlide()">Previous</button>
-      <button onclick="nextSlide()">Next</button> -->
-
-    <div class="grid justify-between grid-cols-2 gap-4 w-full">
-        <% for(var j=0;j<projobjs[i]["objs"].length;j++ )  {  %>
-            <div class="bg-foreground border-black border  inline-block m-6 p-4 rounded-md">
-               
-
-                    <div class="flex projdiv" >
-                        
-                        <div>
-                
-                            <p class="text-lg font-semibold">  <%=   projobjs[i]["objs"][j]["name"]  %>     </p>
-                            <p class="text-md">  <%=   projobjs[i]["objs"][j]["tagline"]  %>     </p>
-                        </div>
-                        <p >  <%=   projobjs[i]["objs"][j]["desc"]  %>     </p>
-                        
-                    </div>
-           
-      
-            </div>
-            
-                    <% } %>
-    </div>
+      <button onclick="prevSlide('<%=i%>')">Previous</button>
+      <button onclick="nextSlide('<%=i%>')">Next</button>
+ 
 
 </div>  
   <%  } %>

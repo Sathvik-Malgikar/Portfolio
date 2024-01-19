@@ -917,6 +917,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-2{
+  padding: 0.5rem;
+}
+
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1370,8 +1374,8 @@ video {
 .carousel {
   display: flex;
   overflow: hidden;
-  width: 300px;
-  /* Adjust as needed */
+  width: 64%;
+  height: 20vh;
   margin: 0 auto;
   /* Center the carousel */
 }

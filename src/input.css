@@ -193,7 +193,8 @@
   .carousel {
     display: flex;
     overflow: hidden;
-    width: 300px; /* Adjust as needed */
+    width: 64%;
+    height: 20vh; 
     margin: 0 auto; /* Center the carousel */
   }
 
