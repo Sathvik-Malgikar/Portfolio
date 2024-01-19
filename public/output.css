@@ -656,6 +656,11 @@ video {
   margin-right: 0.5rem;
 }
 
+.my-5{
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .ml-6{
   margin-left: 1.5rem;
 }
@@ -752,10 +757,6 @@ video {
   width: 75%;
 }
 
-.w-full{
-  width: 100%;
-}
-
 .w-screen{
   width: 100vw;
 }
@@ -826,16 +827,16 @@ video {
   justify-content: space-evenly;
 }
 
-.gap-4{
-  gap: 1rem;
-}
-
 .gap-2{
   gap: 0.5rem;
 }
 
 .self-start{
   align-self: flex-start;
+}
+
+.self-center{
+  align-self: center;
 }
 
 .overflow-hidden{
@@ -900,6 +901,11 @@ video {
   background-color: rgb(221 221 221 / var(--tw-bg-opacity));
 }
 
+.bg-green-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(187 247 208 / var(--tw-bg-opacity));
+}
+
 .bg-black{
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -924,6 +930,11 @@ video {
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .text-center{
@@ -1009,6 +1020,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-blue-500{
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
 .text-blue-600{
@@ -1266,6 +1282,22 @@ video {
   opacity: 0.95;
 }
 
+.projectCover{
+  width: 26vw ;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.projectCover-vertical{
+  width: 12vw ;
+  border-radius: 0.125rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .scrolltap{
   transition-property: all;
   transition-duration: 300ms;
@@ -1337,10 +1369,6 @@ video {
 }
 
 .carousel {
-  display: flex;
-  overflow: hidden;
-  width: 300px;
-  /* Adjust as needed */
   margin: 0 auto;
   /* Center the carousel */
 }
@@ -1374,8 +1402,7 @@ video {
 .carousel {
   display: flex;
   overflow: hidden;
-  width: 64%;
-  height: 20vh;
+  width: 78%;
   margin: 0 auto;
   /* Center the carousel */
 }
@@ -1506,6 +1533,14 @@ video {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 500ms;
   transition-timing-function: linear;
+}
+
+.narrowFlex{
+  flex-grow: 1;
+}
+
+.wideFlex{
+  flex-grow: 2;
 }
 
 h3,

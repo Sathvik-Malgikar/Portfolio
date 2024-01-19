@@ -42,7 +42,9 @@ function prevSlide(ind) {
     ind = Number(ind)
     console.log(ind)
     console.log("previous clicked")
-
+    if(carouselsCollection[ind][0]==0){
+        return
+    }
     carouselsCollection[ind][0] = (carouselsCollection[ind][0] - 1) % carouselsCollection[ind][2];
     showSlide(carouselsCollection[ind][0], ind);
 }

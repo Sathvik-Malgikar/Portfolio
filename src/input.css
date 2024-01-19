@@ -139,6 +139,16 @@
     @apply text-lg rounded bg-foreground m-4 text-center text-black opacity-95;
 }
 
+.projectCover{
+    width: 26vw ;
+    @apply rounded-sm border border-black ;
+}
+.projectCover-vertical{
+    width: 12vw ;
+    @apply rounded-sm border border-black ;
+}
+
+
 .scrolltap {
     @apply hover:scale-90 hover:shadow-md hover:shadow-black transition-all duration-300 ease-in-out;
 }
@@ -159,10 +169,8 @@
     display: flex;
     animation: marquee 25s linear infinite;
   }
+  
  .carousel {
-      display: flex;
-      overflow: hidden;
-      width: 300px; /* Adjust as needed */
       margin: 0 auto; /* Center the carousel */
     }
 
@@ -193,8 +201,7 @@
   .carousel {
     display: flex;
     overflow: hidden;
-    width: 64%;
-    height: 20vh; 
+    width: 78%;
     margin: 0 auto; /* Center the carousel */
   }
 
@@ -259,6 +266,15 @@
 .toast {
     @apply fixed left-12 top-36 rounded bg-foreground max-w-md p-4 text-2xl font-Abel tracking-wide text-center m-6 transition-opacity duration-500 ease-linear;
 }
+
+.narrowFlex{
+    flex-grow: 1;
+}
+
+.wideFlex{
+    flex-grow: 2;
+}
+
 
 h3,
 h1 {
