@@ -267,15 +267,6 @@
     @apply fixed left-12 top-36 rounded bg-foreground max-w-md p-4 text-2xl font-Abel tracking-wide text-center m-6 transition-opacity duration-500 ease-linear;
 }
 
-.narrowFlex{
-    flex-grow: 1;
-}
-
-.wideFlex{
-    flex-grow: 2;
-}
-
-
 h3,
 h1 {
     @apply text-indigo-500;
