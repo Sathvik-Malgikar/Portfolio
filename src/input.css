@@ -9,16 +9,15 @@
     @apply border;
 }
 
-.certificate{
-  align-items: center;
+.certificate {
+    align-items: center;
 
-
-  text-align: center;
-  @apply p-1 m-2 flex flex-col;
+    text-align: center;
+    @apply p-1 m-2 flex flex-col;
 }
-.certificate > img,iframe{
-  width: 40%;
-
+.certificate > img,
+iframe {
+    width: 40%;
 }
 
 .Liclass {
@@ -139,15 +138,14 @@
     @apply text-lg rounded bg-foreground m-4 text-center text-black opacity-95;
 }
 
-.projectCover{
-    width: 26vw ;
-    @apply rounded-sm border border-black ;
+.projectCover {
+    width: 26vw;
+    @apply rounded-sm border border-black;
 }
-.projectCover-vertical{
-    width: 12vw ;
-    @apply rounded-sm border border-black ;
+.projectCover-vertical {
+    width: 12vw;
+    @apply rounded-sm border border-black;
 }
-
 
 .scrolltap {
     @apply hover:scale-90 hover:shadow-md hover:shadow-black transition-all duration-300 ease-in-out;
@@ -156,7 +154,10 @@
 .button {
     @apply inline-block p-3 m-3 rounded hover:scale-90 bg-foreground text-black;
 }
-
+.textContainerProject {
+    width: 44vw;
+    @apply m-2;
+}
 .button-nobg {
     @apply inline-block rounded hover:scale-90 bg-none;
 }
@@ -168,69 +169,66 @@
 .marquee {
     display: flex;
     animation: marquee 25s linear infinite;
-  }
-  
- .carousel {
-      margin: 0 auto; /* Center the carousel */
-    }
+}
 
-    .carousel-inner {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
+.carousel {
+    margin: 0 auto; /* Center the carousel */
+}
 
-    .carousel-item {
-      flex: 0 0 100%;
-    }
- 
-  
-  @keyframes marquee {
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+@keyframes marquee {
     0% {
-      transform: translateX(100%);
+        transform: translateX(100%);
     }
     100% {
-      transform: translateX(-100%);
+        transform: translateX(-100%);
     }
-  }
+}
 
-  /* not really needed to be added */
-  .marquee-item{ 
+/* not really needed to be added */
+.marquee-item {
     flex: 0 0 auto;
     margin-right: 20px;
-  }
-  .carousel {
+}
+.carousel {
     display: flex;
     overflow: hidden;
     width: 78%;
     margin: 0 auto; /* Center the carousel */
-  }
+}
 
-  .carousel-inner {
+.carousel-inner {
     display: flex;
     transition: transform 0.5s ease-in-out;
-  }
+}
 
-  .carousel-item {
+.carousel-item {
     flex: 0 0 100%;
-  }
+}
 
-.bgimgfix{
- 
-        /* Set the background image */
-        background-image: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fHww');
-      
-        /* Set background size to cover the entire viewport */
-        background-size: cover;
-      
-        /* Center the background image */
-        background-position: center;
-      
-        /* Ensure the background image is fixed while scrolling */
-        background-attachment: fixed;
-      
-        /* Specify a background color as a fallback in case the image is not available */
-        background-color: #f0f0f0;
-      
+.bgimgfix {
+    /* Set the background image */
+    background-image: url("https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fHww");
+
+    /* Set background size to cover the entire viewport */
+    background-size: cover;
+
+    /* Center the background image */
+    background-position: center;
+
+    /* Ensure the background image is fixed while scrolling */
+    background-attachment: fixed;
+
+    /* Specify a background color as a fallback in case the image is not available */
+    background-color: #f0f0f0;
 }
 .bargraph {
     @apply m-8 my-auto h-3 bg-background rounded;
