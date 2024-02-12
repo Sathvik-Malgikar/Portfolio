@@ -635,16 +635,16 @@ video {
   margin: 0px;
 }
 
+.m-auto{
+  margin: auto;
+}
+
 .m-14{
   margin: 3.5rem;
 }
 
 .m-2{
   margin: 0.5rem;
-}
-
-.m-auto{
-  margin: auto;
 }
 
 .m-6{
@@ -660,6 +660,11 @@ video {
   margin-right: 0.5rem;
 }
 
+.my-2{
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -667,6 +672,10 @@ video {
 
 .ml-6{
   margin-left: 1.5rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
 }
 
 .ml-40{
