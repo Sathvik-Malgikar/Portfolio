@@ -127,7 +127,7 @@ app.get("/certificates/", (req, res) => {
         console.log("db connected!");
         // let server = http.createServer(app)
         app.listen(process.env.PORT || 5000)
-        console.log("listening");
+        console.log("listening on 5000");
     })
     mongoose.connection.on("error", () => {
         dbconnected = false
